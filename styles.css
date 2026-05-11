@@ -2,5 +2,192 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1em;
 }
 
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+}
+.header{
+    background-color:rgb(146, 89, 4);
+    grid-column: 2/4;
+} 
+.sidebar{
+    grid-row: 1/4;
+    background-color: rgb(163, 198, 212);
+}
+.main-contents{
+    display: flex;
+    background-color: bisque;
+    padding: 1rem;
+}
+.container div{
+    padding: 0.5rem;
+}
+.cards{
+    margin-top: 26px;
+    display: grid;
+    grid-template-columns: 3fr 3fr ;
+    gap: 16px;
+}
+.card{
+    border: 1px solid black;
+    border-radius: 12px;
+    border-left: 7px solid green;
+    box-shadow:1px 3px 3px rgba(117, 8, 45, 0.356);
+    font-size: 23px;
+}
+.announce, .trend{
+    background-color: yellowgreen;
+    border: 1px solid darkcyan;
+    border-radius: 12px;
+    width: 250px;
+    height: 300px;
+}
+
+.announce{
+    margin-bottom: 91px;
+}
+
+.search-input{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 980px;
+    border: 1p solid grey;
+    border-radius: 17px;
+    background-color: rgb(184, 147, 147);
+}
+
+.search{
+    display: flex;
+    gap: 8px;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-hero{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: rgb(92, 212, 13);
+    color: bisque;
+    border-radius: 28px;
+    padding: 16px 32px;
+}
+.btn:hover{
+    background-color: rgb(146, 89, 4);
+    color: lightgreen;
+}
+.fourth{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.icon-home:hover{
+    fill: skyblue;
+}
+.icon-search{
+    width: 50px;
+    height: 28px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: green;
+}
+
+.icon{
+    width: 25px;
+    height: 19px;
+}
+
+.icon-dog{
+    fill: rgb(135, 206, 235);
+    height: 42px;
+    width: 70px;
+}
+.third{
+    display: flex;
+}
+.second{
+    display: flex;
+    gap: 30px;
+}
+.icon-bell{
+    height: 24px;
+    width: 29px;
+}
+.second-list{
+    margin-top: 47px;
+}
+.nav{
+    padding: 20px;
+}
+ul{
+    list-style-type: none;
+}
+.dashboard{
+    width: 65px;
+    height: 46px;
+}
+.dash{
+    display: flex;
+}
+.dash p{
+    font-size: 34px;
+    align-self: center;
+    font-weight: bold;
+}
+
+.item{
+    font-size: 29px;
+}
+.list-card{
+    display: flex;
+    flex-direction: column;
+}
+.cards{
+    flex-grow: 1;
+}
+.h2{
+    margin-bottom: -23px;
+    font-size: 32px;
+}
+.ann{
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+.icon-favorite, .icon-views{
+    height: 32px;
+    width: 32px;
+}
+
+.icons{
+    display: flex;
+    gap: 22px;
+    justify-content: flex-end;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card p{
+    flex-grow: 1;
+}
